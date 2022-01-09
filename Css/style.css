@@ -1,0 +1,593 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 5rem;
+}
+body{
+    background-color: #000;
+        min-height: 100vh;
+        overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+.container .header{
+    position: fixed;
+    width: 130px;
+    height: 100%;
+   background-color: rgb(65, 64, 64);
+    overflow:hidden
+}
+.header .logo img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.header ul{
+    position: absolute;
+    top:150px;
+    left: 0;
+    width: 100%;
+}
+
+.header .navbar .home {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    font-size: 2rem;
+    padding:25px;
+    text-align: center;
+}
+.header .navbar .home:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+.header .navbar .home a{
+    color:#fff;
+    padding:0 5px;
+    font-weight: lighter;
+}
+
+.header .navbar .home  ion-icon{
+    padding: 5px 20px;
+    color:#fff;
+    font-size: 3rem;
+}
+.content{
+    padding: 0 22%;
+}
+
+
+.container .content{
+    position: absolute;
+    width: calc(100% - 130px);
+    left: 130px;
+    min-height: 100vh;
+    
+    /* transition: 0.5s; */
+}
+.container .content .home-section{
+    text-align: center;
+}
+.container .content .home-section .h1-home
+{
+    color:#fff;
+    font-size: 7rem;
+    font-weight: lighter;
+    padding:60px 0 15px 0;
+}
+
+.container .content .home-section .h3-home{
+    color:#fff;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-bottom:15px;
+}
+
+.container .content .about-section{
+    color:#fff;
+}
+
+
+.container .content .about-section .h1-about{
+    font-size: 3.5rem;
+    font-weight: lighter;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding: 10px 50px 20px 0;
+}
+.container .content .about-section p{
+    font-size: 1.5rem;
+    padding: 25px 0;
+    font-weight: lighter;
+    line-height: 1.6;
+    color:silver;
+    text-align:justify;
+}
+
+.container .content .about-section .h3-about{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding-bottom: 15px;
+} 
+.container .content .about-section .about-section-content .columns .test-columns {
+    font-size: 1.5rem;
+    color: rgb(173, 173, 173);
+    font-weight: lighter;
+    letter-spacing: 5px;
+    padding:15px 0;
+}
+.container .content .about-section .about-section-content .columns .max{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container .content .about-section .about-section-content .columns .min-one{
+    width: 90%;
+    height: 30px;
+    background-color: rgb(104, 102, 102);
+}
+
+
+.container .content .about-section .about-section-content .columns .min-two{
+    width: 70%;
+    height: 30px;
+    background-color: rgb(104, 102, 102);
+}
+.container .content .about-section .about-section-content .columns .min-three{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(104, 102, 102);
+}
+
+.container .content .about-section .information .information-shared{
+    position: relative;
+    width: 100%;
+    padding: 27px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 30px;
+    background-color: #fff;
+    margin: 40px 0 15px 0;
+    color:#000;
+    text-align: center;
+}
+.container .content .about-section .information .shared span{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.container .content .about-section .information .shared h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding-top:10px;
+}
+.container .content .about-section .information .btn{
+    background-color: #fff;
+    padding:5px 15px;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    color:#000;
+}
+.container .content .about-section .information .btn:hover{
+    background-color: darkgrey;
+}
+.container .content .about-section .price {
+    padding:50px 0;
+}
+.container .content .about-section .price  .h3-price{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+
+
+.container .content .about-section .price .box-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding-bottom: 100px;
+}
+.container .content .about-section .price .box-container .box{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container .content .about-section .price .box-container .box .box-content .basic{
+    /* color:red; */
+    background-color: seagreen;
+    height: 10rem;
+}
+
+.container .content .about-section .price .box-container .box .box-content .basic span{
+    display: inline-block;
+    color:#000;
+    font-size: 3rem;
+    padding:32px;
+}
+.container .content .about-section .price .box-container .box .box-content .basic-two{
+    /* color:red; */
+    background-color: rgb(116, 116, 116);
+    height: 10rem;
+}
+.container .content .about-section .price .box-container .box .box-content .basic-two span{
+    display: inline-block;
+    color:#fff;
+    font-size: 3rem;
+    padding:32px;
+}
+
+.container .content .about-section .price .box-container .box .box-content .basic-one{
+    font-size: 1.5rem;
+    height: 5rem;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    padding:16px;
+    color:#000;
+}
+
+
+.container .content .about-section .price .box-container .box .box-content .basic-three{
+    font-size: 1.5rem;
+    height: 10rem;
+    border-bottom: 2px solid rgb(75, 75, 75);
+    padding: 24px;
+    color:#000;
+}
+.container .content .about-section .price .box-container .box .box-content .basic-four{
+    /* padding:10px 0; */
+    background-color: rgb(240, 240, 240);
+}
+.container .content .about-section .price .box-container .box .box-content .btn {
+    display: inline-block;
+    background-color: #fff;
+    width: 10rem;
+    height: 5rem;
+    margin: 20px;
+    padding: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#000;
+}
+.container .content .about-section .price .box-container .box .box-content .btn:hover{
+    background-color: #000;
+    cursor: pointer;
+    color:#fff;
+}
+
+.container .content .about-section .price{
+    padding-bottom:50px ; }   
+.container .content .about-section .price .box-container-one{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:0rem;
+}
+
+
+.container .content .about-section .price .box-container-one .box{
+    height: 12rem;
+    background-color: rgb(116, 116, 116);
+    padding:16px;
+}
+.container .content .about-section .price .box-container-one .box-fine{
+    background-color: seagreen;
+}
+.container .content .about-section .price .box-container-one .box .box-contact{
+    padding: 16px;
+    text-align: center;
+}
+.container .content .about-section .price .box-container-one .box .box-contact p,
+.container .content .about-section .price .box-container-one .box .box-contact i{
+    color: #fff;
+    
+}
+.container .content .about-section .price .box-container-one .box .box-contact p{
+    font-size: 1.5rem;
+}
+.container .content .about-section .price .box-container-one .box .box-contact i{
+    font-size: 3rem;
+    padding:0 0 15px 0;
+}
+.reptutation-content .reptutation-two{
+    display: flex;
+    align-items: center;
+}
+.reptutation-content .reptutation-two .logo-reptutation img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.reptutation-content .reptutation-two .reptutation-two-p{
+    padding: 0 20px;
+}
+.reptutation-content .reptutation-two .reptutation-two-p .p-one{
+    padding-bottom:13px;
+}
+.reptutation-content .reptutation-two .reptutation-two-p .p-two{
+    padding-top:6px;
+}
+
+.photos .h1-photos{
+    color:#fff;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding: 10px 50px 20px 0;
+}
+.photos .half{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding:30px 0;
+}
+.photos .half .half-left img{
+    width: 100%;
+    padding-bottom:7px;
+}
+.photos .half .half-right img{
+    width: 100%;
+    padding-bottom:7px;
+} 
+
+
+.contact-section .h1-contact{
+    color:#fff;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding: 10px 50px 20px 0;
+}
+.contact-section .contact-me {
+    color:#fff;
+    padding-top: 20px;
+    /* font-size: 2rem; */
+}
+.contact-section .contact-me .icon{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+}
+.contact-section .contact-me .icon span{
+    font-size: 1.5rem;
+    color:darkgray;
+}
+.contact-section .contact-me .icon ion-icon{
+    font-size: 4rem;
+    padding-right: 30px;
+}
+
+
+.contact-section h5{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: darkgrey;
+    font-weight: lighter;
+}
+.contact-section form .inputBox{
+    display: flex;
+    align-items: center;    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    /* border:var(--border); */
+}
+
+.contact-section form .inputBox span{
+    color:#000;
+    font-size: 2rem;
+}
+
+.contact-section form .inputBox input{
+    width: 100%;
+    height: 2px;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#000;
+    text-transform: none;
+    background:none;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.9rem 3rem;
+    font-size: 1.5rem;
+    color:#000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn span{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.btn ion-icon{
+    color:#000;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+.btn:hover{
+   background-color:darkgray;
+}
+.footer{
+    padding: 100px 0;
+}
+.footer .share{
+    color: #fff;
+    font-size: 3rem;   
+}
+.footer .share ion-icon{
+    padding-right: 10px;
+}
+
+.footer .share ion-icon:hover{
+    color:darkgrey;
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px){
+    .content .home-section .logo-content img{
+        width: 100%;
+    }
+    .content{
+        padding: 0 5%;
+    } 
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    img {
+        width: 100%;
+    }
+     .content{
+        padding: 0 5%;
+    } 
+
+}
+@media only screen and (min-width:768x) and (max-width:1024px){
+.container .header{
+        display: block;
+    }
+    .content .home-section .logo-content img{
+        width: 100%;
+        z-index: 9997;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:760px){
+    .header ul li ion-icon{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .home-section .logo-content img{
+        z-index: 9000;
+    }
+    .container .content{
+        /* position: relative; */
+        width: 100%;
+        left: 0;
+        min-height: 100vh;      
+    }
+    .container .header .navbar{
+        position: fixed;
+        top:0;
+        display: flex;
+        background-color:darkgray;
+        opacity: 0.8;
+        overflow: hidden;
+       
+        
+    }
+    .container .header{
+        z-index: 1000000000000;      
+        width: 100%;
+        height:0;
+        overflow:hidden;
+    }
+    .photos .half {
+        grid-template-columns: repeat(auto-fit, minmax(-1fr, 1fr));
+}
+}
+@media only screen and (min-width:375px) and (max-width:598px){
+    html
+    {
+        font-size: 50%;
+    }
+    .header ul li ion-icon{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .home-section .logo-content img{
+        z-index: 9000;
+    }
+    .container .content{
+        /* position: relative; */
+        width: 100%;
+        left: 0;
+        min-height: 100vh;      
+    }
+    .container .header .navbar{
+        position: fixed;
+        top:0;
+        display: flex;
+        background-color:darkgray;
+        opacity: 0.8;
+        overflow: hidden;
+       
+        
+    }
+    .container .header{
+        z-index: 1000000000000;      
+        width: 100%;
+        height:0;
+        overflow:hidden;
+    }
+}
+@media (max-width:370px){
+    html
+    {
+        font-size: 50%;
+    }
+    .header ul li ion-icon{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .home-section .logo-content img{
+        z-index: 9000;
+    }
+    .container .content{
+        /* position: relative; */
+        width: 100%;
+        left: 0;
+        min-height: 100vh;      
+    }
+    .container .header .navbar{
+        position: fixed;
+        top:0;
+        display: flex;
+        background-color:darkgray;
+        opacity: 0.8;
+        overflow: hidden;
+       
+        
+    }
+    .container .header{
+        z-index: 1000000000000;      
+        width: 100%;
+        height:0;
+        overflow:hidden;
+    }
+}
